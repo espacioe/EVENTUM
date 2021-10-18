@@ -43,6 +43,16 @@
             <!--begin::Input-->
             <input class="form-control form-control-lg form-control-solid" type="text" name="txtIdentificacion" />
             <!--end::Input-->
+            <!--begin::Socio o Propietario-->
+            <br />
+            <label class="form-check form-check-custom form-check-solid form-check-inline">
+             <input class="form-check-input" type="radio" name="chkTipo" value="S" checked />
+             <span class="form-check-label fw-bold text-gray-700 fs-6">Socio</span>
+             &nbsp;&nbsp;&nbsp;
+             <input class="form-check-input" type="radio" name="chkTipo" value="P" />
+             <span class="form-check-label fw-bold text-gray-700 fs-6">Propietario</span>
+            </label>
+            <!--end::Socio o Propietario-->
         </div>
         <!--end::Input group-->
         <!--begin::Actions-->
@@ -55,10 +65,7 @@
                     <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
                 </span>
             </button>
-            <!--end::Submit button-->
-            <!--begin::Separator-->
-            @*<div class="text-center text-muted text-uppercase fw-bolder mb-5"><a href="#">Olvidé Contraseña</a></div>*@
-            <!--end::Separator-->
+            <!--end::Submit button-->            
         </div>
         <!--end::Actions-->
     </form>

@@ -4,5 +4,41 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
+<div id="vista" class="row">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h6><b>PROPIETARIO: </b>@*@Model.usu_nombre*@</h6>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label class="col-md-4">Localidades del propietario:</label>
+                    <div class="col-md-8">
+                        <div class="input-group">
+                            <span class="input-group-addon input-sm"><span style="color:#24760d" class="fa fa-credit-card fa-fw" title="Nombres Socio" data-toggle="tooltip" data-placement="top"></span></span>
+                            <select id="ddlLocalidadUsurio" name="LocalidadUsuario" class="form-control input-sm">
+                                <option value="0">--Selecione localidad--</option>
+                                @*@foreach (var item in @ViewBag.LocalidadesUsuario)
+                                {
+                                    <option value="@item.loc_codigo">@item.loc_nombre</option>
+                                }*@
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    @*@using (Html.BeginForm("SaveUsuarioData", "Propierario", FormMethod.Post, new { @class = "form-horizontal", id = "NewPropietarioDataForm", onsubmit = "return false" }))
+                    {
+                        @Html.AntiForgeryToken()
+                        <div class="panel-body">
+
+                            <div id="vistaPropietario">
+                            </div>
+                        </div>
+                    }*@
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
